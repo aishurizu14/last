@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Comic Sans MS, Comic Sans MS;
+    background:#0f172a;
+}
+
+.page{
+    height:100vh;
+    position:relative;
+}
+
+iframe{
+    width:100%;
+    height:100vh;
+    border:none;
+}
+
+/* tombol */
+.btn{
+    position:absolute;
+    bottom:240px;
+    left:50%;
+    transform:translateX(-50%);
+    
+    padding:14px 30px;
+    background:#7c3f58;
+    color:white;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    display:none; /* ❗ awalnya disembunyiin */
+    z-index:10;
+}
+
+.btn.show{
+    display:block;
+}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+    <iframe src="https://htmlku.com/gaboleya/play/"></iframe>
+
+    <div class="btn" id="nextBtn" onclick="next()">
+        Next ❤️
+    </div>
+</div>
+
+<script>
+/* tombol baru muncul setelah 30 detik */
+setTimeout(()=>{
+    document.getElementById("nextBtn").classList.add("show");
+}, 30000);
+
+function next(){
+    window.location.href = "https://gifft.me/o/p/jizoqa6codc8nnjevlg53kbw";
+}
+</script>
+
+</body>
+</html>
